@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
+        System.out.println("값을 입력해주세요");
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
