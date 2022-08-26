@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  *  제한 조건
  *     - n과 m은 각각 1000 이하인 자연수입니다.
- */
+ *///
 
 public class Solution {
     public static void main(String[] args) {
