@@ -1,5 +1,7 @@
 package com.example.programers_java.Programers_Java.level1._15_Scala_Product;
 
+import java.util.Arrays;
+
 /**
  * 내적
  * 문제 설명
@@ -11,21 +13,28 @@ package com.example.programers_java.Programers_Java.level1._15_Scala_Product;
  * a, b의 길이는 1 이상 1,000 이하입니다.
  * a, b의 모든 수는 -1,000 이상 1,000 이하입니다.
  * 입출력 예
- * a	b	result
- * [1,2,3,4]	[-3,-1,0,2]	3
- * [-1,0,1]	[1,0,-1]	-2
+* a	             b	           result
+ * [1,2,3,4]	[-3,-1,0,2]	   3
+ * [-1,0,1]	    [1,0,-1]	  -2
  */
 public class Solution {
-
     public int solution(int[] a, int[] b) {
-
         int total = 0;
 
         for( int i = 0 ; i < a.length; i++) {
-
             total += a[i]*b[i];
         }
-
         return total;
+    }
+
+
+    public static void main(String[] args){
+        int[] a = {1,2,3,4};
+        int[] b = {-3, -1, 0, 2};
+
+        Solution s = new Solution();
+        int total = s.solution(a, b);
+        System.out.println("최종 답은?:" + total);
+
     }
 }
