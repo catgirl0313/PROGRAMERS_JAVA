@@ -18,12 +18,16 @@ package com.example.programers_java.Programers_Java.level1._17_Basic_String;
 public class Solution {
     public boolean solution(String s) {
         boolean answer = true;
-        int a = 1;
-        for(int i = 0; i < s.length(); i++){
-            if(typeof s.charAt(i) == typeof 1){
+        if(s.length() == 4 || s.length() == 6) {
 
+            try {
+                Integer.parseInt(s);
+                answer = true;
+            } catch (NumberFormatException e) {
+                answer = false;
             }
         }
+
         return answer;
     }
 
@@ -37,3 +41,11 @@ public class Solution {
 
     }
 }
+
+//    public boolean solution(String s) {
+//        if (s.length() == 4 || s.length() == 6) return s.matches("(^[0-9]*$)");
+//        return false;
+////    }
+//      String.matches()로 특정 패턴의 문자열을 포함하는지 확인 가능
+//      문자열에 정규표현식이 일치하는지를 boolean으로 리턴.
+//
