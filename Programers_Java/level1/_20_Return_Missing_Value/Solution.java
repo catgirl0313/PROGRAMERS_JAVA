@@ -22,23 +22,18 @@ import java.util.Arrays;
  */
 public class Solution {
     public String solution(String[] participant, String[] completion) {
-        String answer = "";
-        Arrays.asList(participant).contains(completion);
-        boolean status = false;
+        Arrays.sort(participant);
+        Arrays.sort(completion);
+        int i;
+        for (i = 0; i < completion.length; i++) {
+            if (!participant[i].equals(completion[i])) {
+                return participant[i];
+            }
+        }
 
-         for(int i = 0; i< participant.length; i++){
-             for(int j = 0; j < completion.length; j++ ){
-                 if(participant[i].equals(completion[j]){
-                     if(status) break;
-                 }
-
-                 if(seoul[i].equals("Kim"))
-                     answer = participant[i];
-             }
-         }
-
-        return answer;
+        return participant[i];
     }
+
 
     public static void main(String[] args){
         Solution s = new Solution();
