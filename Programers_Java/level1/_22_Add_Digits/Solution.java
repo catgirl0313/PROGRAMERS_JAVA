@@ -20,10 +20,11 @@ package com.example.programers_java.Programers_Java.level1._22_Add_Digits;
  * 9 + 8 + 7 = 24이므로 24를 return 하면 됩니다.
  */
 public class Solution {
-    public int solution(int n) {
+    public int solution(long n) {
         int answer = 0;
+        int length = (int)(Math.log10(n)+1);
 
-        for(int i = 0; i < 9; i++){
+        for(int i = 0; i < length ; i++){
             answer += (n % 10);
             n/=10;
 
@@ -34,7 +35,7 @@ public class Solution {
 
     public static void main(String[] args){
         Solution c = new Solution();
-        int n = 123;
+        long n = 9999999999L;
 
         int answer = c.solution(n);
         System.out.println(answer);
