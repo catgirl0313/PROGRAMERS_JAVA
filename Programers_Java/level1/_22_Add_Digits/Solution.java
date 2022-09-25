@@ -22,7 +22,7 @@ package com.example.programers_java.Programers_Java.level1._22_Add_Digits;
 public class Solution {
     public int solution(long n) {
         int answer = 0;
-        int length = (int)(Math.log10(n)+1);
+        int length = (int)(Math.log10(n)+1); // (int)(Math.log10(n)+1) 크기 구하기
 
         for(int i = 0; i < length ; i++){
             answer += (n % 10);
