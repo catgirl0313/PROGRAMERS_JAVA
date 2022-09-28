@@ -1,7 +1,6 @@
 package com.example.programers_java.Programers_Java.level1._26_Remove_Smallest;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  * 제일 작은 수 제거하기
@@ -22,33 +21,19 @@ public class Solution {
 
     public int[] solution(int[] arr) {
         int[] answer = new int[arr.length-1];
+        int j =0;
+        Arrays.sort(arr);
+
         if(arr.length <= 1){
             return new int[]{-1};
         }else{
-            Arrays.sort(arr);
-            int[] b = new int[arr.length];
-
-            for (int i = 0; i < arr.length; i++){
-                int temp = arr[i];
-                b[i] = arr[arr.length-i-1];
-                arr[i] = temp;
-            }
-
-            for (int i = 0; i < arr.length-1; i++) {
-                answer[i] += arr[i];
-                return answer;
-            }
-
+            for(int i = arr.length -1; i>0; i--){ //내림차순 정렬
+                answer[j] = arr[i];
+                j++;
+            }return answer;
         }
-
-//
-//            for(int i = arr.length -1; i>=0; i--){ //내림차순 정렬
-//                answer += arr[i];
-//            }
-
-
-        return answer;
     }
+    //-------------작동은 하나, 너무 느려서 테스트 통과가 안됨----------------
 
     public static void main(String[] args) {
         Solution c = new Solution();
