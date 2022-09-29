@@ -34,6 +34,7 @@ public class Solution {
         }
     }
     //-------------작동은 하나, 너무 느려서 테스트 통과가 안됨----------------
+    //프로그래머스... 문제의도가 다른 듯함. 2341 입력시 234가 나와야하는데, 정렬 후 마지막 제외시키면 432가 나오므로..?
 
     public static void main(String[] args) {
         Solution c = new Solution();
