@@ -38,10 +38,12 @@ import java.util.Arrays;
  * 626331은 500번을 시도해도 1이 되지 못하므로 -1을 리턴해야 합니다.
  */
 public class Solution {
-    public int solution(int num) {
+    public int solution(long num) { // int -> long 변환으로 통과.*입력된 수, num은 1 이상 8,000,000 미만인 정수입니다.
         int answer = 0;
+        if(num == 1)
+            return 0;
         for(int i = 1; i < 502; i++) {
-            if(i == 501){
+            if(i == 501 && num !=1){
                 return -1;
             }
             else if (num % 2 == 0) {
@@ -66,3 +68,12 @@ public class Solution {
 
     }
 }
+
+//    public int collatz(int num) {
+//        long n = (long)num;
+//        for(int i =0; i<500; i++){
+//            if(n==1) return i;
+//            n = (n%2==0) ? n/2 : n*3+1;
+//        }
+//        return -1;
+//    }
