@@ -9,7 +9,6 @@ package com.example.programers_java.Programers_Java.level1._30_Min_Rectangle;
  * 이러한 요건을 만족하는 지갑을 만들기 위해 디자인팀은 모든 명함의 가로 길이와 세로 길이를 조사했습니다.
  *
  * 아래 표는 4가지 명함의 가로 길이와 세로 길이를 나타냅니다.
- *
  * 명함 번호	가로 길이	세로 길이
  * 1	60	50
  * 2	30	70
@@ -43,7 +42,6 @@ package com.example.programers_java.Programers_Java.level1._30_Min_Rectangle;
  *
  * 입출력 예 #3
  * 명함들을 적절히 회전시켜 겹쳤을 때, 모든 명함을 포함하는 가장 작은 지갑의 크기는 133(=19 x 7)입니다.
- *
  */
 public class Solution {
     public int solution(int[][] sizes) {
@@ -51,14 +49,12 @@ public class Solution {
         return answer;
     }
 
-
     public static void main(String[] args) {
         Solution c = new Solution();
         int[][] sizes = {{60, 80}, {30, 70}, {60, 30}, {80, 40}};
 
         int answer = c.solution(sizes);
         System.out.println(answer);
-
-
     }
+
 }
