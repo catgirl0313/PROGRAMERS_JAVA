@@ -55,7 +55,6 @@ public class Solution {
 
         int answer = c.solution(sizes);
         System.out.println(answer);
-
     }
 
 }
