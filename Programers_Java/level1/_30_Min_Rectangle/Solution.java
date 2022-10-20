@@ -53,9 +53,9 @@ public class Solution {
         Solution c = new Solution();
         int[][] sizes = {{60, 80}, {30, 70}, {60, 30}, {80, 40}, {20, 60}};
 
+
         int answer = c.solution(sizes);
         System.out.println(answer);
-
     }
 
 }
