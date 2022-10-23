@@ -48,7 +48,6 @@ public class Solution {
         int answer = 0;
         return answer;
     }
-
     public static void main(String[] args) {
         Solution c = new Solution();
         int[][] sizes = {{60, 80}, {30, 70}, {60, 30}, {80, 40}, {20, 60}};
@@ -56,7 +55,6 @@ public class Solution {
 
         int answer = c.solution(sizes);
         System.out.println(answer);
-
 
     }
 
